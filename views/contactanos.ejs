@@ -1,0 +1,30 @@
+<%- include ("templates/cabecera",{
+    tituloP:"Contact"
+}) %>
+
+<body>
+    <h1><%= titulo%></h1> 
+    <%- include ("templates/navprin")%>
+    
+    <div class="bod">
+    <div class="diseño">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Entregar</button>
+      </div>
+    </div>
+    </div>
+    <%- include ("templates/footer")%>
+</body>
+</html>
